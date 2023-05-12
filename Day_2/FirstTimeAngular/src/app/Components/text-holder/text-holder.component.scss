@@ -1,0 +1,19 @@
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black;
+}
+div > input[type="button"]{
+        margin-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: rgb(255, 167, 35);
+    color: rgb(140, 0, 0);
+    width: 100%;
+}

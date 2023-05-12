@@ -1,0 +1,50 @@
+<section class="h-75 gradient-form p-5 ">
+    <div class="container w-75">
+        <div class="row d-flex justify-content-center align-items-center h-100 gradient-custom rounded-4">
+            <div class="col-xl-10 d-flex justify-content-center align-items-center w-100">
+                <div class="card rounded-3 text-black w-100 m-5">
+                    <div class="row g-0">
+                        <div class="col-lg-12">
+                            <div class="card-body p-md-5 mx-md-4">
+
+                                <div class="text-center">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                                        style="width: 185px;" alt="logo">
+                                    <h4 class="mt-1 mb-5 pb-1">Students Data</h4>
+                                </div>
+
+
+
+                                <div *ngIf="student" class="form-outline mb-4">
+                                    <label for="name" class="ps-3 h6">Name:</label>
+                                    <input type="text" id="form2Example11" class="form-control text-center" placeholder="Name"
+                                        value="{{student.name}}" disabled>
+
+                                </div>
+
+                                <div *ngIf="!student" class="text-center">
+                                  <h1>Loading...</h1>
+                                </div>
+                                <div class="form-outline mb-4 " *ngIf="student">
+                                    <label for="UserName" class="ps-3 h6">UserName:</label>
+                                    <input type="text" placeholder="UserName" id="form2Example22" class="form-control text-center"
+                                      value="{{student.username}}"  disabled/>
+                                </div>
+
+                                <div class="form-outline mb-4 " *ngIf="student">
+                                    <label for="email" class="ps-3 h6">Email:</label>
+                                    <input type="email" name="email" id="form2Example11" class="form-control text-center"
+                                        placeholder="Email" value="{{student.email}}" disabled/>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

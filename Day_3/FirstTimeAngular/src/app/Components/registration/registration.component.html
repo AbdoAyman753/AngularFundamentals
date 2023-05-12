@@ -1,0 +1,13 @@
+<div id="container">
+    <div>
+        <input type="text" placeholder="Enter Name..." [(ngModel)]="name">
+        <span *ngIf="name.length<3 || !name">Name Required!</span>
+    </div>
+    <div>
+        <input type="text" placeholder="Enter Age..." [(ngModel)]="age">
+        <span *ngIf="!age">Age Required!</span>
+        <span *ngIf="(+age<20 || +age>40)">20 &lt; Age &lt; 40</span>
+    </div>
+    <input type="button" value="Add" (click)="Add()">
+</div>
+
