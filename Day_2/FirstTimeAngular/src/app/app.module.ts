@@ -19,4 +19,4 @@ import { ShowSliderComponent } from './Components/show-slider/show-slider.compon
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

@@ -23,7 +23,7 @@ export class RegistrationComponent {
   userError = 0;
   userNameError = 0;
   emailError = 0;
-  additionSuccess = 0;
+      additionSuccess = 0;
 
   Add() {
     //Check errors

@@ -39,7 +39,7 @@ export class RegistrationComponent {
     }else{
       this.emailError = 0;
     }
-    
+
     if(this.userError || this.ageError || this.emailError){
       throw("Invalid Data...");
     }
@@ -56,7 +56,7 @@ export class RegistrationComponent {
     // this.myValidation.controls["age"].markAsUntouched();
     // this.myValidation.controls["email"].markAsUntouched();
     
-    
-    
+
+
   }
 }
